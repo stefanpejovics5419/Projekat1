@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: klijent
+  labels:
+    name: klijent
+spec:
+  containers:
+  - name: domaci
+    image: stefanpejovic/prviprojekat:latest
+    ports:
+    - containerPort: 8081
